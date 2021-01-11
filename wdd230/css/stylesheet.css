@@ -12,3 +12,17 @@ header, footer {
     padding: 8px;
     border-radius: 15px;
 }
+header h1 {
+    font-size: 32px;
+    padding-left: 95px;
+}
+main {
+    padding:0 15px;
+}
+main h2 {
+    border-bottom: 1px solid black;
+}
+.profile {
+    float: right;
+    box-shadow: 0 0 17px black;
+}
