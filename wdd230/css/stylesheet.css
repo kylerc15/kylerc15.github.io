@@ -1,0 +1,14 @@
+body {
+    background-color: #EEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#index main {
+    max-width: 800px;
+    margin:0 auto;
+}
+header, footer {
+    background-color: #643219;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+}
