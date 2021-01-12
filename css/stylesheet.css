@@ -24,7 +24,6 @@ main h2 {
     border-bottom: 1px solid black;
 }
 .profile {
-    float: right;
     box-shadow: 0 0 17px black;
 }
 footer a, footer a:link,footer a:visited, footer a:hover, footer a:active, footer a:focus {
