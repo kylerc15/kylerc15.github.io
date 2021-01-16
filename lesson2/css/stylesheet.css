@@ -1,19 +1,31 @@
 #main {
     background-color: wheat;
-    max-width: 800px;
+    max-width: 1000px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    grid-gap: 10px;
 }
 img {
     max-width: 300px;
 }
 #thirds {
     grid-column: 1/2;
+    margin: 0 auto;
 }
 #hicks {
     grid-column: 2/3;
+    margin: 0 auto;
 }
 #fitts {
     grid-column: 3/4;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    background-color: teal;
+    color: white;
+    max-width: 1000px;
 }
