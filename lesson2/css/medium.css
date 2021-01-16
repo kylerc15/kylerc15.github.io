@@ -1,0 +1,5 @@
+@media only screen and (max-width: 850px) {
+    #fitts {
+        grid-column: 1/2;
+    }
+}

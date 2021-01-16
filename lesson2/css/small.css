@@ -1,0 +1,8 @@
+@media only screen and (max-width: 500px) {
+    #hicks {
+        grid-column: 1/2;
+    }
+    #fitts {
+        grid-column: 1/2;
+    }
+}
