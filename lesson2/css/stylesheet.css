@@ -4,3 +4,15 @@
     display:grid;
     grid-template-columns: 1em 1em 1em;
 }
+img {
+    max-width: 300px;
+}
+#thirds {
+    grid-column: 1/2;
+}
+#hicks {
+    grid-column: 2/3;
+}
+#fitts {
+    grid-column: 3/4;
+}
