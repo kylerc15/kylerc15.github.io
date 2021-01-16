@@ -1,0 +1,6 @@
+#main {
+    background-color: wheat;
+    max-width: 800px;
+    display:grid;
+    grid-template-columns: 1em 1em 1em;
+}
