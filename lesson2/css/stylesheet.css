@@ -1,35 +1,71 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
 #main {
-    background-color: wheat;
+    background-color: white;
     max-width: 1000px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     margin: 0 auto;
-    font-family: 'Roboto Slab', serif;
     grid-gap: 10px;
 }
 img {
     max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 335px;
+    object-fit: cover;
+    border: 1px solid black;
 }
 #thirds {
     grid-column: 1/2;
     margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: lightgray;
 }
 #hicks {
     grid-column: 2/3;
     margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: lightgray;
 }
 #fitts {
     grid-column: 3/4;
     margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: lightgray;
 }
 header {
     text-align: center;
     background-color: teal;
     color: white;
     max-width: 1000px;
+    margin: 0 auto;
 }
 h4 {
     background-color: blue;
     color: white;
+    padding: 25px;
+    margin: 0;
+    border-radius: 25px 25px 0 0;
+}
+#thirdspic {
+    object-position: 100% 5%;
+}
+#fittspic {
+    object-position: 100% 100%;
+}
+.description {
+    padding: 0 15px;
+}
+.link {
+    padding: 0 0 0 12.325px;
+}
+.organization {
+    padding: 0 0 0 12.325px;
 }
