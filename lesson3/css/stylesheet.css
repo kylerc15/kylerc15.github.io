@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(170, 170, 170);
+}
+main {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: rgb(255, 225, 56);
+    padding: 20px 0 20px 0;
+    font-family: 'Hind', sans-serif;
+}
+h3 {
+    font-weight: 400;
+}
+img {
+    max-width: 100px;
+    border: black 2px solid;
+}
+#logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 300px;
+    margin: 0 auto;
+}
+p {
+    max-width: 400px;
+    margin: 0 auto;
+}
+#title {
+    font-weight: 700;
+    text-decoration: rgb(255, 225, 56)
+}
+.underline {
+    text-decoration: underline;
+}
+ul {
+    text-align: left;
+    padding: 0 0 0 75px;
+}
+#lines {
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    padding: 0 0 25px 0;
+    margin: 25px 0 0 0;
+}
+#color-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 25px;
+}
+#gold {
+    background-color: rgb(255, 225, 56);
+    margin: 5px 0;
+}
+#silver {
+    background-color: rgb(170, 170, 170);
+    margin: 5px 0;
+}
+#lightblue {
+    background-color: rgb(164, 214, 231);
+    margin: 5px 0;
+}
+#color-main {
+    background-color: white;
+}
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(164, 214, 231);
+    padding: 7px;
+}
+nav ul li {
+    text-align: center;
+    border: black 2px solid;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    background-color: rgb(170, 170, 170);
+}
+.new-font {
+    font-family: 'Yusei Magic', sans-serif;
+}
+@media only screen and (max-width: 770px) {
+    nav ul {
+        grid-template-columns: auto;
+    }
+
+}
