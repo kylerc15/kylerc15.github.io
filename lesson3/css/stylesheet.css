@@ -78,6 +78,8 @@ nav ul li {
 }
 a {
     text-decoration: none;
+    display:block;
+    color:black;
 }
 a:hover {
     text-decoration: underline;
