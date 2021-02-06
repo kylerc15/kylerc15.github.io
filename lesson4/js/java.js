@@ -4,11 +4,21 @@ window.addEventListener('load', ()=>{
 
     hambutton.addEventListener('click', ()=> {mainnav.classList.toggle('responsive')}, false);
 
-    window.onresize = ()=> {
+
+
+const today = new Date();
+const year = today.getFullYear();
+const date = today.getDate();
+const day = today.getDay();
+
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const monthName = months[today.getMonth()];
+
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const dayName = days[today.getDay()];
+
+const formatDate = `${dayName}, ${date} ${monthName} ${year}`;
+document.getElementById('curDate').innerHTML = formatDate.toLocaleString();
 
     }
-});
-window.addEventListener('load', (event)=>{
-    const cry = document.querySelector("#curDate");
-    cry.textContent = new Date().getFullYear();
-})
+,);

@@ -1,0 +1,24 @@
+.pancake {
+    width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 17% auto 17%;
+}
+#words {
+    color: palevioletred;
+    margin: 0 auto;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding: 15px;
+}
+.left {
+    justify-self: right;
+    align-self: center;
+    max-width: 50px;
+}
+.right {
+    justify-self: left;
+    align-self: center;
+    max-width: 50px;
+}

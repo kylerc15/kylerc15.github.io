@@ -33,6 +33,7 @@ header {
     background-color: rgb(255, 225, 56);
     border-radius: 10px 10px 0 0;
     max-height: 120px;
+    max-width: 100%;
 }
 .hamButton {
     text-decoration: none;
@@ -57,7 +58,7 @@ main div p {
 footer {
     background-color: rgb(255, 225, 56);
     border-radius: 0 0 10px 10px;
-    max-height: 50px;
+    max-height: 70px;
     padding: 10px;
     margin: 5px 0 0 0;
     text-align: center;
@@ -73,6 +74,9 @@ ul li a {
 }
 a:hover {
     background-color: rgb(164, 214, 231);
+}
+.legal {
+    margin: 10px;
 }
 @media only screen and (min-width: 34.5em){
     header h1 {
@@ -101,7 +105,28 @@ a:hover {
         padding: 10px;
     }
     body {
-        max-width: 1100px;
         margin: 10px auto;
+    }
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    footer {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    img {
+        margin: 0;
+        justify-self: right;
+        align-self: center;
+    }
+    header h1 {
+        margin: 0 0 0 100px;
+        font-size: 60px;
+    }
+    header p {
+        margin: -15px 0 0 0;
+        padding-left: 100px;
+        font-size: 25px;
     }
 }
