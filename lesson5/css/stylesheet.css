@@ -178,6 +178,19 @@ h4 {
 #map {
     display: none;
 }
+#pancake {
+    width: 100%;
+    background-color: rgb(164, 214, 231);
+    display:none;
+}
+#words {
+    color: palevioletred;
+    margin: 0 auto;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding: 15px;
+}
 @media only screen and (min-width: 60.5em){
     #navigation li:first-child {
         display: none;
