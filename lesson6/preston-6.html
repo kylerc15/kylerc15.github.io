@@ -6,6 +6,7 @@
     <title>Preston Page</title>
     <link href="/lesson6/css/stylesheet.css" rel="stylesheet">
     <script src="/lesson6/js/java.js"></script>
+    <script src='/lesson6/js/windchill.js'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,10 +44,10 @@
             <div class="weathSumBox">
                 <p id='weathSumHead'>Weather Summary</p>
                 <p>Currently: <strong>Sunny</strong></p>
-                <p>High: <strong>76 &#176;F</strong></p>
-                <p>Wind Chill: <strong>&#176;F</strong></p>
+                <p>High: <strong><span id='temp'>45</span> &#176;F</strong></p>
+                <p>Wind Chill: <strong id="allChill"><span id='wChill'></span>&#176;F</strong></p>
                 <p>Humidity: <strong>69%</strong></p>
-                <p>Wind Speed: <strong>5 mph</strong></p>
+                <p>Wind Speed: <strong><span id='wSpeed'>8</span> mph</strong></p>
             </div>
         </div>
         <div id='forecast'>
