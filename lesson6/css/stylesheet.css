@@ -194,6 +194,24 @@ h4 {
 #articlediv a {
     padding: 0 0 0 10px;
 }
+.combo img {
+    width:500px;
+    height: 300px;
+}
+.combo p {
+    padding:0 0 0 5px;
+    font-style: italic;
+}
+.combo {
+    border: solid 5px rgb(164, 214, 231);
+    width: 500px;
+    margin: 10px auto;
+}
+#gall-images {
+    display: grid;
+    grid-template-columns: 550px;
+    justify-content: center;
+}
 @media only screen and (min-width: 910px){
     #navigation li:first-child {
         display: none;
@@ -281,7 +299,9 @@ h4 {
         top: 40px;
         left: 80px;
     }
-
+    #gall-images {
+        grid-template-columns: 550px 550px;
+    }
 }
 @media only screen and (min-width:1300px){
     body {
@@ -312,5 +332,11 @@ h4 {
     .weathSumBox {
         top: 10px;
         left: 130px;
+    }
+    #gall-images {
+        grid-template-columns: 550px 550px 550px;
+    }
+    .combo:hover {
+        box-shadow: 0 0 50px #333;
     }
 }
