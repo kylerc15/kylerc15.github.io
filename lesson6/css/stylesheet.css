@@ -353,10 +353,17 @@ form div label {
     }
     fieldset {
         padding-left: 20px;
+        width: 700px;
+        margin: 0 auto;
     }
     #severe {
         grid-template-columns: 180px auto 10%;
         max-width: 640px;
+    }
+    .submitBtn {
+        margin: 10px auto;
+        width: 400px;
+        font-size: 25px;
     }
 }
 @media only screen and (min-width:1300px){
