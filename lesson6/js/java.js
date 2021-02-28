@@ -23,5 +23,5 @@ document.getElementById('curDate').innerHTML = formatDate.toLocaleString();
 if(today.getDay() == 5) {
     document.getElementById('pancake').style.display = 'block';
 }
-}
-,);
+
+},);

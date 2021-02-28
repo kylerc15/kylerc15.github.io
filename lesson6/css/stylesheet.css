@@ -212,6 +212,44 @@ h4 {
     grid-template-columns: 450px;
     justify-content: center;
 }
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto;
+}
+label, form div {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 20px;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+}
+input, textarea, select {
+    max-width: 400px;
+}
+legend {
+    font-family: 'Hind', sans-serif;
+    font-size: 21px;
+}
+#severe {
+    grid-template-columns: 120px auto 10%;
+    max-width: 440px;
+}
+form div label {
+    display: block;
+}
+.submitBtn {
+    border: none;
+    background-color: rgb(255, 225, 56);
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 600px;
+    font-size: 25px;
+}
 @media only screen and (min-width: 910px){
     #navigation li:first-child {
         display: none;
@@ -301,6 +339,20 @@ h4 {
     }
     #gall-images {
         grid-template-columns: 450px 450px;
+    }
+    form label, input, textarea, select {
+        font-size: 25px;
+        max-width: 600px;
+    }
+    legend {
+        font-size: 30px;
+    }
+    fieldset {
+        padding-left: 20px;
+    }
+    #severe {
+        grid-template-columns: 180px auto 10%;
+        max-width: 640px;
     }
 }
 @media only screen and (min-width:1300px){
