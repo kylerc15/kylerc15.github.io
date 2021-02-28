@@ -250,6 +250,10 @@ form div label {
     width: 600px;
     font-size: 25px;
 }
+#thanks {
+    text-align: center;
+    font-size: 30px;
+}
 @media only screen and (min-width: 910px){
     #navigation li:first-child {
         display: none;
