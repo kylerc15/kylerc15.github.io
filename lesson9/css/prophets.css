@@ -1,0 +1,40 @@
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+section {
+    border: 3px solid black;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    background-color: rgb(114, 163, 248);
+}
+img {
+    display: block;
+    margin: 0 auto;
+    margin: 15px;
+}
+body {
+    font-family: 'Patua One', cursive;
+    background-color: rgb(230, 230, 230);
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+@media only screen and (max-width: 1700px) {
+    .cards {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .cards {
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .cards {
+        grid-template-columns: auto;
+    }
+}
