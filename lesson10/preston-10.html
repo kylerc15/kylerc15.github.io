@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potato Weather Home Page</title>
-    <link href="/lesson6/css/stylesheet.css" rel="stylesheet">
-    <script src="/lesson9/js/town-data.js"></script>
-    <script src="/lesson6/js/java.js"></script>
+    <title>Preston Page</title>
+    <link href="/lesson10/css/style.css" rel="stylesheet">
+    <script src="/lesson10/js/javascript.js"></script>
+    <script src='/lesson6/js/windchill.js'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">  
-    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
+    <div id="pancake">
+        <p id="words" >Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion!</p>
+    </div>
     <header>
         <img id='logo' src="/lesson6/images/rsz_potato-icon.jpg" alt="Happy-Potato">
         <h1>Potato Weather</h1>
@@ -24,8 +27,8 @@
     <nav>
         <ul id='navigation'>
             <li><a href="#" class="hamButton">&#9776; Menu</a></li>
-            <li><a class='active' href="/lesson9/index.html">Home</a></li>
-            <li><a href="/lesson10/preston-10.html">Preston</a></li>
+            <li><a href="/lesson9/index.html">Home</a></li>
+            <li><a class='active' href="/lesson10/preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
@@ -33,14 +36,38 @@
         </ul>
     </nav>
     <main>
-        <div class="city">
-
+        <h2>Preston Idaho</h2>
+        <div id='positioning'>
+            <img id="hero" src="/lesson6/images/rsz_1rsz_farm-hero-image.jpg" alt="farm-sunset">
+            <div class="weathSumBox">
+                <p id='weathSumHead'>Weather Summary</p>
+                <p>Currently: <strong id='current'></strong></p>
+                <p>High: <strong><span id='temp'></span> &#176;F</strong></p>
+                <p>Wind Chill: <strong id="allChill"><span id='wChill'></span>&#176;F</strong></p>
+                <p>Humidity: <strong id='humid'></strong><strong>%</strong></p>
+                <p>Wind Speed: <strong><span id='wSpeed'></span> mph</strong></p>
+            </div>
         </div>
-        <ol>
-            <li><a href="https://wireframe.cc/TUKdt8">Small Wireframe</a></li>
-            <li><a href="https://wireframe.cc/dmNhj5">Medium Wireframe</a></li>
-            <li><a href="https://wireframe.cc/QUEaGC">Large Wireframe</a></li>
-        </ol>
+        <div id='forecast'>
+            <h3>5 day forecast</h3>
+            <div id='weathForecast'>
+                <div class="dayOfWeek"><span id='5'></span></div>
+                <div class="dayOfWeek"><span id='6'></span></div>
+                <div class="dayOfWeek"><span id='7'></span></div>
+                <div class="dayOfWeek"><span id='8'></span></div>
+                <div class="dayOfWeek"><span id='9'></span></div>
+                <img id='10' alt="weather-icon">
+                <img id='11' alt="weather-icon">
+                <img id='12' alt="weather-icon">
+                <img id='13' alt="weather-icon">
+                <img id='14' alt="weather-icon">
+                <div class="temp"><span id='0'></span>&#176;F</div>
+                <div class="temp"><span id='1'></span>&#176;F</div>
+                <div class="temp"><span id='2'></span>&#176;F</div>
+                <div class="temp"><span id='3'></span>&#176;F</div>
+                <div class="temp"><span id='4'></span>&#176;F</div>
+            </div>
+        </div>
         <div id='articlediv'>
             <img id='article' src="/lesson6/images/rsz_article-photo.jpg" alt='lady-on-hay-bail'>
             <h4>Winter Trouble</h4>
@@ -78,7 +105,7 @@
         </div>
     </main>
     <footer>
-        <p class='legal'>&copy; <span id='copyrightyear'></span> Potato Weather | Attributions | Kyler Campbell</p>
+        <p class='legal'>&copy; <span id='copyrightyear'></span> Potato Weather | Attributions: <a href="https://openweathermap.org/">Open Weather Map</a> | Kyler Campbell</p>
         <div class='highlight'><span id='curDate'></span></div>
     </footer>
 </body>
