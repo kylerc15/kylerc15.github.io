@@ -1,6 +1,6 @@
 window.addEventListener('load', ()=>{
 
-    const requestURL = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=4bc5043b865ab98443e7950c385bf8e1&units=imperial';
+    const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=4bc5043b865ab98443e7950c385bf8e1&units=imperial';
 
     fetch(requestURL)
       .then(function (response) {
