@@ -1,0 +1,140 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: bisque;
+}
+main {
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: white;
+}
+.line-items {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    margin-left: 20px;
+}
+hr {
+    grid-column: 1/3;
+    margin: 5px;
+    background-color: lightgray;
+    max-width: 300px;
+
+}
+.top {
+    background-color: #dddddd;
+}
+h2 {
+    margin-left: 30px;
+    font-size: 30px;
+    color: #5f5f5f;
+    font-weight: 400;
+}
+h5, h4 {
+    margin: 10px;
+}
+h5 {
+    color: #969696;
+}
+#return {
+    display: block;
+    padding: 30px;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(47, 117, 255);
+}
+.visa {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 100px;
+    align-self: right;
+    justify-self: right;
+    justify-content: right;
+    align-content: right;
+    margin-left: 275px;
+}
+.visa p:first-child {
+    color: white;
+    background-color: rgb(47, 117, 255);
+    padding: 5px;
+    border: 1px blue solid;
+    border-radius: 10px 0 0 10px;
+    font-size: 13px;
+    padding-left: 15px;
+    font-weight: 700;
+}
+.visa p:nth-child(2) {
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #9b9898;
+    color: white;
+    border: 1px solid #9b9898;
+    border-radius: 0 10px 10px 0;
+    padding: 5px;
+}
+input {
+    border: none;
+    border-bottom: 1px solid #5f5f5f;
+    width: 300px;
+}
+form {
+    display: grid;
+    grid-template-columns: 80px 80px auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    margin-left: 30px;
+    grid-gap: 23px;
+}
+form label:first-child, form label:nth-child(2), form label:nth-child(3), form label:nth-child(7) {
+    grid-column: 1/-1;
+}
+.line-items h4:nth-child(9) {
+    color: rgb(47, 117, 255);
+}
+label {
+    color: #969696;
+    font-size: 0.83em;
+    font-weight: bold;
+}
+.small {
+    width: 80px;
+}
+form label:nth-child(5) {
+    grid-column: 2/3;
+}
+form label:nth-child(8) {
+    font-size: 10px;
+    grid-column: 1/3;
+}
+button {
+    grid-column: 1/3;
+    border: none;
+    background-color: rgb(47, 117, 255);
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 18px;
+}
+#same {
+    width: 10px;
+}
+#cancel {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(47, 117, 255);
+}
+main section:nth-child(2) {
+    border: 1px solid #969696;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+.top p:nth-child(4){
+    margin-bottom: 0;
+}
+@media only screen and (min-width: 810px){
+    main {
+        width: 800px;
+        display: grid;
+        grid-template-columns: 400px auto;
+    }
+}
