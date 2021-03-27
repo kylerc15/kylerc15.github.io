@@ -108,7 +108,7 @@ a:hover {
     padding: 10px 0 10px 0;
 }
 h4 {
-    font-size: 45px;
+    font-size: 30px;
     line-height: 25px;
     margin: 25px;
 }
@@ -254,7 +254,7 @@ form div label {
     text-align: center;
     font-size: 30px;
 }
-.city section:first-child, .city section:nth-child(3), .city section:nth-child(4), .city section:nth-child(5) {
+.city section:nth-child(2), .city section:nth-child(4), .city section:nth-child(5), .city section:nth-child(6) {
     display: none;
 }
 .city {
@@ -291,6 +291,16 @@ form div label {
 .city section h5:nth-child(2) {
     font-style: italic;
     font-size: 10px;
+}
+#weathForecast img {
+    width: 70px;
+    padding: .3rem;
+    border-top: 1px solid;
+    border-left: 1px solid black;
+}
+.highlight span {
+    display: block;
+    margin: -15px;
 }
 @media only screen and (min-width: 910px){
     #navigation li:first-child {
@@ -350,11 +360,13 @@ form div label {
         border-bottom: black 2px solid;
     }
     #weathForecast div {
-        border-right: black 2px solid;
+        border-left: 1px solid black;
     }
     .temp {
         min-width: 80px;
         text-align: center;
+        border-top: 1px solid black;
+        padding-top: 4px;
     }
     #weathForecast div:last-child {
         border-right: none;
@@ -426,6 +438,9 @@ form div label {
     }
     .city section:nth-child(6) h4, .city section:nth-child(6) h5 {
         grid-column: 2 / 3;
+    }
+    .highlight span {
+        margin: 0;
     }
 }
 @media only screen and (min-width:1300px){

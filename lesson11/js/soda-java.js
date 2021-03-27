@@ -20,11 +20,7 @@ const dayName = days[today.getDay()];
 const formatDate = `${dayName}, ${date} ${monthName} ${year}`;
 document.getElementById('curDate').innerHTML = formatDate.toLocaleString();
 
-if(today.getDay() == 5) {
-    document.getElementById('pancake').style.display = 'block';
-}
-
-const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=4bc5043b865ab98443e7950c385bf8e1&units=imperial';
+const requestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=4bc5043b865ab98443e7950c385bf8e1&units=imperial';
 
 fetch(requestURL)
   .then(function (response) {
@@ -35,7 +31,7 @@ fetch(requestURL)
     // console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const weather = jsonObject['weather'];
-
+    
     const current = document.getElementById('current');
     current.innerHTML = weather[0].main;
 
@@ -53,7 +49,7 @@ fetch(requestURL)
 },);
 });
 
-const requestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&cnt=5&appid=4bc5043b865ab98443e7950c385bf8e1&units=imperial';
+const requestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&cnt=5&appid=4bc5043b865ab98443e7950c385bf8e1&units=imperial';
 
 fetch(requestURL)
   .then(function (response) {
