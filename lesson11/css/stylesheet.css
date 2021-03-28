@@ -308,6 +308,7 @@ form div label {
     border-radius: 10px;
     display: block;
     margin: 20px auto;
+    background-color: rgb(164, 214, 231);
 }
 .events h6 {
     text-align: center;
