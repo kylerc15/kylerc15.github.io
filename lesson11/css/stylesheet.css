@@ -302,6 +302,24 @@ form div label {
     display: block;
     margin: -15px;
 }
+.events {
+    width: 300px;
+    border: 5px solid rgb(255, 225, 56);
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+.events h6 {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+.events hr {
+    margin: 10px;
+}
+#upevents h5 {
+    text-align: center;
+}
 @media only screen and (min-width: 910px){
     #navigation li:first-child {
         display: none;

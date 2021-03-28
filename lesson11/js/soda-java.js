@@ -91,3 +91,23 @@ const dayName = days[today.getDay()];
         curDay.innerHTML = days[dayNum].substr(0, 3);
     }
 });
+
+const requestURL2 = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL2)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+
+    // console.table(jsonObject);  // temporary checking for valid response and data parsing
+
+    const towns = jsonObject['towns'];
+
+    let event = document.getElementById("upevents");
+
+    event.innerHTML = `<h5>${towns[0].events[0]}</h5>
+                       <h5>${towns[0].events[1]}</h5>
+                       <h5>${towns[0].events[2]}</h5>`
+
+  });
