@@ -419,7 +419,7 @@ iframe {
         background-color: #2191fb;
         font-weight: 700;
     }
-    main {
+    .indexMain {
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
